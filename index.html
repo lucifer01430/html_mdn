@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The ultimate HTML guide for students, from beginner to advanced, with fun examples and clear explanations.">
+    <meta name="keywords" content="HTML, Learn HTML, Web Development, HTML Tutorial, HTML Structure">
+    <meta name="author" content="Harsh">
+    <title>Learn HTML - Fun & Easy Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar"> Menu</button>
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Navigation menu">
+        <img src="logo.svg" alt="" class="logo">
+        <h2>HTML Topics</h2>
+        <button id="theme-toggle" aria-label="Toggle theme">🌙 Toggle Theme</button>
+        <input type="text" id="search-bar" placeholder="Search topics..." aria-label="Search HTML topics">
+        <ul id="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#html-basics">HTML Basics</a></li>
+            <li><a href="#text-content">Text & Content</a></li>
+            <li><a href="#attributes-values">Attributes & Values</a></li>
+            <li><a href="#links-navigation">Links & Navigation</a></li>
+            <li><a href="#images-visuals">Images & Visuals</a></li>
+            <li><a href="#lists-grouping">Lists & Grouping</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#forms-inputs">Forms & Inputs</a></li>
+            <li><a href="#semantic-html">Semantic HTML</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#html-apis">HTML APIs & Media</a></li>
+            <li><a href="#html5-features">HTML5 Features</a></li>
+            <li><a href="#iframes-embedding">IFrames & Embedding</a></li>
+            <li><a href="#meta-seo">Meta Tags & SEO</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+            <li><a href="#sizes-units">Sizes & Units</a></li>
+            <li><a href="#code-playground">Code Playground</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="main-content" class="content" aria-label="Main content">
+        <!-- Home -->
+<section id="home">
+    <h1>Learn HTML: A Comprehensive Guide</h1>
+    <p>Welcome to Learn HTML, your definitive resource for mastering HTML, created by <strong><a href="https://lucifer01430.github.io/Portfolio/" target="_blank" rel="noopener">Harsh</a></strong>. This guide offers clear, structured lessons with practical examples and hands-on exercises to help you build professional HTML webpages with confidence. Whether you're a beginner or looking to refine your skills in HTML, let’s embark on this journey together.</p>
+    <p>Explore the topics using the sidebar or begin your learning journey below.</p>
+</section>
+
+        <!-- 1. HTML Basics -->
+        <section id="html-basics">
+            <h2>1. HTML Basics</h2>
+
+            <h3>1.1 HTML Structure</h3>
+            <p>Think of HTML as the skeleton of a webpage, like the frame of a house. Every HTML document starts with a
+                specific structure: a DOCTYPE declaration, an <code>&lt;html&gt;</code> tag, a <code>&lt;head&gt;</code>
+                for
+                metadata (like the title), and a <code>&lt;body&gt;</code> for content users see. This is the most
+                important
+                part, so let’s nail it!</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My Awesome Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Site&lt;/h1&gt;
+    &lt;p&gt;This is my first webpage, and it’s gonna rock!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;!DOCTYPE html&gt;</code> tells browsers this is HTML5.
+                <code>&lt;html lang="en"&gt;</code> sets the language to English. <code>&lt;head&gt;</code> holds
+                metadata like
+                <code>&lt;title&gt;</code> (shown in the browser tab). <code>&lt;body&gt;</code> contains everything
+                users see, like
+                headings and paragraphs. This structure is the foundation of every webpage!
+            </p>
+
+            <h3>1.2 What is HTML?</h3>
+            <p>HTML (HyperText Markup Language) is like the recipe for a webpage. It tells browsers how to display text,
+                images, and more using “tags” that wrap content, like <code>&lt;p&gt;</code> for paragraphs or
+                <code>&lt;h1&gt;</code> for headings.
+            </p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;About HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;What’s HTML?&lt;/h1&gt;
+    &lt;p&gt;It’s the language that builds the web!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: Tags like <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> structure
+                content. HTML is
+                all about organizing info so browsers can show it nicely.</p>
+
+            <h3>1.3 Setting Up the Environment</h3>
+            <p>Creating HTML is easy: grab a text editor (like VS Code or Notepad) and a browser (like Chrome). Write
+                your code, save it as <code>filename.html</code>, and open it in a browser to see the magic!</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Try&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;I just made a webpage!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: Save this as <code>index.html</code>, open it in Chrome, and boom—you’ve
+                got a webpage! No fancy tools needed.</p>
+
+            <h3>1.4 HTML Doctype and Versions</h3>
+            <p>The DOCTYPE tells browsers which HTML version you’re using. HTML5 is the latest and greatest, with a
+                simple <code>&lt;!DOCTYPE html&gt;</code>. Older versions like HTML4 had clunky DOCTYPEs, but you don’t
+                need
+                those anymore.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;HTML5 Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;This is HTML5, baby!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;!DOCTYPE html&gt;</code> is short, sweet, and ensures modern
+                browsers
+                understand your code. Always put it at the top!</p>
+
+            <h3>1.5 HTML Elements, Tags, and Attributes</h3>
+            <p>Elements are the building blocks of HTML, created by tags (e.g., <code>&lt;div&gt;</code>). Attributes
+                add
+                extra info, like <code>id="unique"</code> to identify an element.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Elements Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="main"&gt;This is a div!&lt;/div&gt;
+    &lt;p class="intro"&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;div&gt;</code> and <code>&lt;p&gt;</code> are elements.
+                <code>id</code> and
+                <code>class</code> are attributes that help style or identify them.
+            </p>
+
+            <h3>1.6 Nesting Elements and Tag Hierarchy</h3>
+            <p>HTML tags can nest inside each other, like boxes in boxes, but they must close properly. Think of it like
+                stacking containers neatly.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Nesting Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;h1&gt;My Blog&lt;/h1&gt;
+        &lt;p&gt;Welcome to my &lt;span&gt;awesome&lt;/span&gt; site!&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;span&gt;</code> is nested inside <code>&lt;p&gt;</code>, which is
+                inside
+                <code>&lt;div&gt;</code>. Close tags in reverse order to avoid errors.
+            </p>
+        </section>
+
+        <!-- 2. Text & Content Elements -->
+        <section id="text-content">
+            <h2>2. Text & Content Elements</h2>
+
+            <h3>2.1 Headings</h3>
+            <p>Headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) are like chapter titles in a book,
+                organizing content
+                and boosting SEO. Use <code>&lt;h1&gt;</code> once per page for the main title.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Headings Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+    &lt;h2&gt;About Me&lt;/h2&gt;
+    &lt;h3&gt;My Hobbies&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;h1&gt;</code> is the biggest and most important,
+                <code>&lt;h2&gt;</code> for
+                subsections, and so on. Search engines love clear heading hierarchies!</p>
+
+            <h3>2.2 Paragraphs and Line Breaks</h3>
+            <p>Paragraphs (<code>&lt;p&gt;</code>) hold text blocks, like sentences in a story. Use
+                <code>&lt;br&gt;</code> for line
+                breaks within a paragraph, like hitting “Enter”.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Paragraph Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;This is a paragraph about my cat.&lt;/p&gt;
+    &lt;p&gt;My cat loves to:&lt;br&gt;Play&lt;br&gt;Sleep&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;p&gt;</code> creates a new block, while <code>&lt;br&gt;</code>
+                breaks the
+                line without starting a new paragraph.</p>
+
+            <h3>2.3 Formatting Tags</h3>
+            <p>Formatting tags like <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> add style and meaning. Think
+                of them as
+                highlighters for your text!</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Formatting Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;I &lt;b&gt;love&lt;/b&gt; to code!&lt;/p&gt;
+    &lt;p&gt;This is &lt;strong&gt;super important&lt;/strong&gt; and &lt;em&gt;really cool&lt;/em&gt;.&lt;/p&gt;
+    &lt;p&gt;Check this &lt;u&gt;underlined&lt;/u&gt; or &lt;mark&gt;highlighted&lt;/mark&gt; text.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;strong&gt;</code> shows importance (bold),
+                <code>&lt;em&gt;</code> adds
+                emphasis (italic), <code>&lt;u&gt;</code> underlines, and <code>&lt;mark&gt;</code> highlights.</p>
+
+            <h3>2.4 Quotations & Citations</h3>
+            <p>Use <code>&lt;blockquote&gt;</code> for long quotes, <code>&lt;q&gt;</code> for short ones, and
+                <code>&lt;cite&gt;</code>
+                to credit the source, like quoting a famous line.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Quotes Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;blockquote&gt;Be the change you wish to see.&lt;/blockquote&gt;
+    &lt;p&gt;Gandhi said: &lt;q&gt;Be the change.&lt;/q&gt;&lt;/p&gt;
+    &lt;p&gt;Source: &lt;cite&gt;Mahatma Gandhi&lt;/cite&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;blockquote&gt;</code> stands out for big quotes,
+                <code>&lt;q&gt;</code> is
+                inline, and <code>&lt;cite&gt;</code> gives proper credit.</p>
+
+            <h3>2.5 Superscript and Subscript</h3>
+            <p><code>&lt;sup&gt;</code> and <code>&lt;sub&gt;</code> are like tiny text for math or science, perfect for
+                equations
+                or chemical formulas.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Sup/Sub Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Area = x&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+    &lt;p&gt;Water = H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;sup&gt;</code> raises text (e.g., exponents),
+                <code>&lt;sub&gt;</code> lowers
+                it (e.g., chemical formulas).</p>
+
+            <h3>2.6 Preformatted Text</h3>
+            <p><code>&lt;pre&gt;</code> keeps spacing and formatting intact, great for code snippets. Pair it with
+                <code>&lt;code&gt;</code> for inline code.
+            </p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Pre Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;pre&gt;
+function sayHi() {
+    alert("Hello!");
+}
+    &lt;/pre&gt;
+    &lt;p&gt;Try this: &lt;code&gt;console.log("Hi");&lt;/code&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;pre&gt;</code> preserves spaces and tabs, ideal for showing code
+                exactly as
+                written.</p>
+        </section>
+
+        <!-- 3. HTML Attributes & Values -->
+        <section id="attributes-values">
+            <h2>3. HTML Attributes & Values</h2>
+
+            <h3>3.1 Global Attributes</h3>
+            <p>Global attributes like <code>id</code>, <code>class</code>, and <code>lang</code> work on any tag, like
+                labels on
+                boxes to organize or style them.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Global Attributes&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="hero" class="banner" lang="en" title="Welcome"&gt;Home Section&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+<div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>id</code> is unique, <code>class</code> groups elements,
+                <code>lang</code>
+                sets language, and <code>title</code> shows a tooltip.</p>
+
+            <h3>3.2 Boolean Attributes</h3>
+            <p>Boolean attributes (e.g., <code>disabled</code>) don’t need a value—they’re either on or off, like a
+                light
+                switch.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Boolean Attributes&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;input type="text" disabled&gt;
+    &lt;input type="checkbox" checked&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>disabled</code> grays out the input, <code>checked</code> pre-selects
+                the
+                checkbox.</p>
+
+            <h3>3.3 Data Attributes</h3>
+            <p><code>data-*</code> attributes store custom info, like secret notes for JavaScript to use later.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Data Attributes&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div data-user-id="123"&gt;User Profile&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>data-user-id</code> holds custom data, accessible via JavaScript for
+                dynamic
+                features.</p>
+
+            <h3>3.4 Style vs. CSS Classes</h3>
+            <p>Use <code>style</code> for quick inline styles, but <code>class</code> with CSS files is better for
+                reusable
+                designs.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Style Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p style="color: blue;"&gt;Blue Text&lt;/p&gt;
+    &lt;p class="highlight"&gt;Highlighted Text&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>style</code> is one-off, while <code>class</code> lets you style
+                multiple
+                elements consistently via CSS.</p>
+        </section>
+
+        <!-- 4. Links & Navigation -->
+        <section id="links-navigation">
+            <h2>4. Links & Navigation</h2>
+
+            <h3>4.1 Anchor Tag</h3>
+            <p>The <code>&lt;a&gt;</code> tag is like a teleport button, linking to other pages or sections with
+                <code>href</code>.
+            </p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Links Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;a href="https://google.com"&gt;Google&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+<div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>href</code> points to the destination, making text clickable.</p>
+
+            <h3>4.2 Target Attributes</h3>
+            <p><code>target</code> decides where the link opens, like a new tab or the same page.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Target Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;a href="https://google.com" target="_blank" rel="noopener"&gt;Open in New Tab&lt;/a&gt;
+    &lt;a href="#home" target="_self"&gt;Back to Top&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>_blank</code> opens a new tab, <code>_self</code> stays in the same
+                tab, and
+                <code>rel="noopener"</code> adds security.
+            </p>
+
+            <h3>4.3 Mailto, Tel, and External Links</h3>
+            <p>Create email or phone links with <code>mailto:</code> or <code>tel:</code>, like quick-dial buttons.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Contact Links&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;a href="mailto:harshpandeylucifer@gmail.com"&gt;Email Us&lt;/a&gt;
+    &lt;a href="tel:+919555299718"&gt;Call Us&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: Clicking these opens the user’s email or phone app.</p>
+
+            <h3>4.4 Navigation Menus</h3>
+            <p>Use <code>&lt;nav&gt;</code> to create menus, like a website’s roadmap for users and search engines.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Nav Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#html-basics"&gt;HTML - Basics &lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;nav&gt;</code> groups links, making navigation clear and
+                accessible.</p>
+        </section>
+
+        <!-- 5. Images & Visuals -->
+        <section id="images-visuals">
+            <h2>5. Images & Visuals</h2>
+
+            <h3>5.1 Image Tag</h3>
+            <p>The <code>&lt;img&gt;</code> tag is like hanging a photo on your webpage’s wall, using <code>src</code>
+                for the image
+                file.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Image Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img src="sunset.jpg" alt="A beautiful sunset"&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+<div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>src</code> points to the image, <code>alt</code> describes it for
+                accessibility.</p>
+
+            <h3>5.2 Alt, Title, Width, Height, Loading</h3>
+            <p>Attributes make images user-friendly and fast-loading.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Image Attributes&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img src="cat.jpg" alt="Cute cat" title="Hover for info" width="300" height="200" loading="lazy"&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>alt</code> helps screen readers, <code>title</code> shows a tooltip,
+                <code>width</code>/<code>height</code> set size, and <code>loading="lazy"</code> speeds up page load.
+            </p>
+
+            <h3>5.3 Image Optimization</h3>
+            <p>Compress images and use formats like WebP to make your site lightning-fast.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Optimized Image&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img src="photo.webp" alt="Optimized photo"&gt;
+&lt;/body&gt;
+&lt;/html&gt; </pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: WebP is smaller than JPEG, so pages load quicker.</p>
+
+            <h3>5.4 Image Maps</h3>
+            <p><code>&lt;map&gt;</code> and <code>&lt;area&gt;</code> turn parts of an image into clickable links, like
+                a treasure map!</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Image Map&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;img src="boy_image.png" usemap="#image-map"&gt;
+
+&lt;map name="image-map"&gt;
+    &lt;area onclick="one()" target="" alt="" title="" href="" coords="252,102,95" shape="circle"&gt;
+    &lt;area onclick="two()" target="" alt="" title="" href="" coords="274,380,352,359,337,499" shape="poly"&gt;
+&lt;/map&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>coords</code> define clickable areas, linking to different pages.</p>
+
+            <h3>5.5 Figure and Figcaption</h3>
+            <p><code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> pair images with captions, like a museum
+                display.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Figure Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;figure&gt;
+        &lt;img src="art.jpg" alt="Painting"&gt;
+        &lt;figcaption&gt;A stunning artwork.&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;figcaption&gt;</code> adds context, making images more
+                meaningful.</p>
+        </section>
+
+        <!-- 6. Lists & Grouping -->
+        <section id="lists-grouping">
+            <h2>6. Lists & Grouping</h2>
+
+            <h3>6.1 Ordered Lists</h3>
+            <p><code>&lt;ol&gt;</code> creates numbered lists, perfect for step-by-step guides.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Ordered List&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ol&gt;
+        &lt;li&gt;Learn HTML&lt;/li&gt;
+        &lt;li&gt;Practice CSS&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre><button class="show-output" aria-label="Show output">Show Output</button>
+<div class="output-container"></div>
+            <p><strong>Explanation</strong>: Numbers are automatic, and <code>start="2"</code> can shift the starting
+                number.
+            </p>
+
+            <h3>6.2 Unordered Lists</h3>
+            <p><code>&lt;ul&gt;</code> makes bullet-point lists, great for random items.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Unordered List&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Coffee&lt;/li&gt;
+        &lt;li&gt;Tea&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: Bullets help list items without any order.</p>
+
+            <h3>6.3 Description Lists</h3>
+            <p><code>&lt;dl&gt;</code> pairs terms with details, like a dictionary.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Description List&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;dl&gt;
+        &lt;dt&gt;HTML&lt;/dt&gt;
+        &lt;dd&gt;Builds webpage structure&lt;/dd&gt;
+        &lt;dt&gt;CSS&lt;/dt&gt;
+        &lt;dd&gt;Styles the webpage&lt;/dd&gt;
+    &lt;/dl&gt;
+&lt;/body&gt;
+&lt;/html&gt; </pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;dt&gt;</code> is the term, <code>&lt;dd&gt;</code> its
+                definition.</p>
+
+            <h3>6.4 Nested Lists</h3>
+            <p>Nest lists inside each other for complex hierarchies, like a family tree.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Nested Lists&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Skills
+            &lt;ul&gt;
+                &lt;li&gt;HTML&lt;/li&gt;
+                &lt;li&gt;CSS&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt; </pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: Nested <code>&lt;ul&gt;</code> creates sub-bullets for deeper organization.
+            </p>
+        </section>
+
+        <!-- 7. Tables -->
+        <section id="tables">
+            <h2>7. Tables</h2>
+
+            <h3>7.1 Basic Table Structure</h3>
+            <p>Tables (<code>&lt;table&gt;</code>) organize data in rows and columns, like a spreadsheet.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Basic Table&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;td&gt;Aman&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt; </pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+<div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;tr&gt;</code> is a row, <code>&lt;th&gt;</code> a header,
+                <code>&lt;td&gt;</code> a data
+                cell.</p>
+
+            <h3>7.2 Table Rows, Headers & Data Cells</h3>
+            <p>Use <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> for better structure.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Table Structure&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th scope="col"&gt;Name&lt;/th&gt;
+                &lt;th scope="col"&gt;Age&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Aman&lt;/td&gt;
+                &lt;td&gt;20&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;thead&gt;</code> groups headers, <code>&lt;tbody&gt;</code> data,
+                and
+                <code>scope</code> clarifies header roles.
+            </p>
+
+            <h3>7.3 Spanning Rows and Columns</h3>
+            <p><code>colspan</code> and <code>rowspan</code> merge cells for flexible layouts.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Table Span&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th colspan="2"&gt;Profile&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td rowspan="2"&gt;Aman&lt;/td&gt;
+            &lt;td&gt;Student&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;20&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>colspan="2"</code> spans two columns, <code>rowspan="2"</code> two
+                rows.</p>
+
+            <h3>7.4 Table Caption and Styling</h3>
+            <p><code>&lt;caption&gt;</code> adds a title to explain the table’s purpose.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Table Caption&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;table&gt;
+        &lt;caption&gt;Student Records&lt;/caption&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;td&gt;Aman&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;caption&gt;</code> gives context, styled via CSS for a clean
+                look.</p>
+        </section>
+
+        <!-- 8. Forms & Input Elements -->
+        <section id="forms-inputs">
+            <h2>8. Forms & Input Elements</h2>
+
+            <h3>8.1 Form Structure</h3>
+            <p>Forms (<code>&lt;form></code>) are like questionnaires, collecting user info with <code>action</code> and
+                <code>method</code>.
+            </p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Form Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form action="/submit" method="POST"&gt;
+        &lt;input type="text" name="username"&gt;
+        &lt;input type="submit" value="Send"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+<div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>action</code> is the server URL, <code>method="POST"</code> sends
+                data
+                securely.</p>
+
+            <h3>8.2 Input Types</h3>
+            <p>Inputs like <code>text</code>, <code>radio</code>, and <code>file</code> handle different data.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Input Types&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form&gt;
+        &lt;input type="text" name="name"&gt;
+        &lt;input type="radio" name="gender" value="male"&gt; Male
+        &lt;input type="checkbox" name="subscribe"&gt; Subscribe
+        &lt;input type="file" name="photo"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: Each <code>type</code> fits a specific input need, like uploading files or
+                selecting options.</p>
+
+            <h3>8.3 Label, Fieldset, Legend</h3>
+            <p><code>&lt;label&gt;</code> and <code>&lt;fieldset&gt;</code> make forms user-friendly and accessible.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Form Accessibility&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form&gt;
+        &lt;fieldset&gt;
+            &lt;legend&gt;Personal Info&lt;/legend&gt;
+            &lt;label for="name"&gt;Name:&lt;/label&gt;
+            &lt;input type="text" id="name" name="name"&gt;
+        &lt;/fieldset&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;label for="id"&gt;</code> links to inputs,
+                <code>&lt;legend&gt;</code> describes the
+                group.</p>
+
+            <h3>8.4 Textarea, Select, Option</h3>
+            <p><code>&lt;textarea&gt;</code> for long text, <code>&lt;select&gt;</code> for dropdowns.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Textarea &amp; Select&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form&gt;
+        &lt;textarea name="bio" rows="4"&gt;Tell us about you...&lt;/textarea&gt;
+        &lt;select name="color"&gt;
+            &lt;option value="red"&gt;Red&lt;/option&gt;
+            &lt;option value="blue"&gt;Blue&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;textarea&gt;</code> allows multi-line input,
+                <code>&lt;select&gt;</code> offers
+                choices.</p>
+
+            <h3>8.5 Validation</h3>
+            <p>Attributes like <code>required</code> and <code>pattern</code> ensure valid input.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Form Validation&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form&gt;
+        &lt;input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"&gt;
+        &lt;input type="submit"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>required</code> prevents empty fields, <code>pattern</code> checks
+                email
+                format.</p>
+
+            <h3>8.6 Input Attributes</h3>
+            <p>Attributes like <code>placeholder</code> guide users.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Input Attributes&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form&gt;
+        &lt;input type="text" placeholder="Your Name" autocomplete="name"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>placeholder</code> shows a hint, <code>autocomplete</code> suggests
+                saved
+                data.</p>
+        </section>
+
+        <!-- 9. Semantic HTML -->
+        <section id="semantic-html">
+            <h2>9. Semantic HTML</h2>
+
+            <h3>9.1 Why Semantic HTML?</h3>
+            <p>Semantic HTML is like labeling your webpage’s parts (e.g., header, footer) so browsers, search engines,
+                and
+                screen readers understand it better.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Semantic Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;My Site&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;article&gt;Welcome to my blog!&lt;/article&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt; </pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+<div class="output-container"></div>
+            <p><strong>Explanation</strong>: Semantic tags make your site more accessible and SEO-friendly.</p>
+
+            <h3>9.2 Semantic Elements</h3>
+            <p>Tags like <code>&lt;header></code>, <code>&lt;nav></code>, and <code>&lt;footer&gt;</code> give meaning
+                to sections.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Semantic Elements&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav&gt;
+        &lt;a href="#home"&gt;Home&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;aside&gt;Sidebar info&lt;/aside&gt;
+    &lt;footer&gt;© 2025&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: Each tag has a specific role, like <code>&lt;nav&gt;</code> for navigation
+                links.</p>
+
+            <h3>9.3 Accessibility Benefits</h3>
+            <p>Semantics help screen readers navigate, making your site inclusive.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Accessible Semantics&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;main role="main"&gt;
+        &lt;h1&gt;Content&lt;/h1&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>role="main"</code> tells assistive tech this is the primary content.
+            </p>
+        </section>
+
+        <!-- 10. Multimedia -->
+        <section id="multimedia">
+            <h2>10. Multimedia</h2>
+
+            <h3>10.1 Audio Tag</h3>
+            <p><code>&lt;audio&gt;</code> adds sound, like a podcast or music player.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Audio Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;audio controls&gt;
+        &lt;source src="song.mp3" type="audio/mp3"&gt;
+        Your browser doesn’t support audio.
+    &lt;/audio&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>controls</code> adds play/pause buttons, <code>&lt;source&gt;</code>
+                specifies the
+                file.</p>
+
+            <h3>10.2 Video Tag</h3>
+            <p><code>&lt;video&gt;</code> embeds videos, like YouTube clips.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Video Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;video controls width="400" poster="thumbnail.jpg"&gt;
+        &lt;source src="clip.mp4" type="video/mp4"&gt;
+        Your browser doesn’t support video.
+    &lt;/video&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>poster</code> shows a preview image, <code>width</code> sets size.
+            </p>
+
+            <h3>10.3 Attributes</h3>
+            <p>Attributes like <code>autoplay</code> and <code>loop</code> control playback.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Video Attributes&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;video autoplay loop muted&gt;
+        &lt;source src="bg.mp4" type="video/mp4"&gt;
+    &lt;/video&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>muted</code> is needed for <code>autoplay</code>, <code>loop</code>
+                repeats
+                the video.</p>
+
+            <h3>10.4 Source and Track</h3>
+            <p><code>&lt;source&gt;</code> supports multiple formats, <code>&lt;track&gt;</code> adds subtitles.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Video Tracks&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;video controls&gt;
+        &lt;source src="clip.mp4" type="video/mp4"&gt;
+        &lt;track src="subtitles.vtt" kind="subtitles" srclang="en" label="English"&gt;
+    &lt;/video&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;track&gt;</code> makes videos accessible with captions.</p>
+        </section>
+
+        <!-- 11. HTML APIs & Advanced Media -->
+        <section id="html-apis">
+            <h2>11. HTML APIs & Advanced Media</h2>
+
+            <h3>11.1 Drag and Drop API</h3>
+            <p><code>draggable</code> lets users drag elements, like moving files on a desktop.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Drag Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div draggable="true"&gt;Drag me!&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+<div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>draggable="true"</code> enables dragging, but needs JavaScript for
+                full
+                functionality.</p>
+
+            <h3>11.2 Geolocation API</h3>
+            <p>Get the user’s location (with permission) for maps or local services.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Geolocation Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button onclick="getLocation()"&gt;Find My Location&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: The button triggers JavaScript to access location data.</p>
+
+            <h3>11.3 Media Capture</h3>
+            <p><code>accept</code> and <code>capture</code> let users take photos or videos.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Media Capture&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;input type="file" accept="image/*" capture="camera"&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>capture="camera"</code> opens the camera on mobile devices.</p>
+
+            <h3>11.4 File API</h3>
+            <p>Handle file uploads with <code>multiple</code>.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;File Upload&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;input type="file" multiple&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>multiple</code> allows selecting multiple files.</p>
+
+            <h3>11.5 Canvas & SVG Introduction</h3>
+            <p><code>&lt;canvas&gt;</code> and <code>&lt;svg&gt;</code> create graphics, like drawing apps or logos.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Canvas &amp; SVG&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;
+    &lt;svg width="100" height="100"&gt;
+        &lt;circle cx="50" cy="50" r="40" fill="blue"/&gt;
+    &lt;/svg&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;canvas&gt;</code> needs JavaScript, <code>&lt;svg&gt;</code> is
+                vector-based for
+                sharp graphics.</p>
+        </section>
+
+        <!-- 12. HTML5 New Features -->
+        <section id="html5-features">
+            <h2>12. HTML5 New Features</h2>
+
+            <h3>12.1 New Elements</h3>
+            <p>HTML5 added tags like <code>&lt;details&gt;</code> and <code>&lt;article&gt;</code> for richer content.
+            </p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;HTML5 Elements&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;details&gt;
+        &lt;summary&gt;Click to Expand&lt;/summary&gt;
+        &lt;p&gt;Hidden info here!&lt;/p&gt;
+    &lt;/details&gt;
+    &lt;article&gt;Blog post content&lt;/article&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+<div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;details&gt;</code> creates collapsible sections,
+                <code>&lt;article&gt;</code> for
+                standalone content.</p>
+
+            <h3>12.2 Dialog, Template, Output</h3>
+            <p>New tags for modals, reusable content, and form results.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Dialog Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;dialog open&gt;
+        &lt;p&gt;This is a modal!&lt;/p&gt;
+    &lt;/dialog&gt;
+    &lt;template id="myTemplate"&gt;
+        &lt;p&gt;Reusable text&lt;/p&gt;
+    &lt;/template&gt;
+    &lt;output&gt;Form result&lt;/output&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>&lt;dialog&gt;</code> shows popups, <code>&lt;template&gt;</code>
+                stores content for
+                later.</p>
+
+            <h3>12.3 Autofocus, Required, Placeholder</h3>
+            <p>Make forms smarter with HTML5 attributes.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Form Enhancements&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form&gt;
+        &lt;input type="text" autofocus required placeholder="Your Name"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>autofocus</code> highlights the field, <code>required</code> enforces
+                input.
+            </p>
+
+            <h3>12.4 Native Form Validation</h3>
+            <p>HTML5 validates inputs automatically, no JavaScript needed.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Validation Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form&gt;
+        &lt;input type="email" required&gt;
+        &lt;input type="submit"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: Browsers check email format and block submission if invalid.</p>
+        </section>
+
+        <!-- 13. IFrames & Embedding -->
+        <section id="iframes-embedding">
+            <h2>13. IFrames & Embedding</h2>
+
+            <h3>13.1 IFrame Tag</h3>
+            <p><code>&lt;iframe&gt;</code> embeds another webpage, like a window to another site.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;IFrame Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;iframe src="https://www.youtube.com/embed/DnoJEwYlImg?si=p37DgiaNHl1M2m86" width="600" height="400" title="Embedded site"&gt;&lt;/iframe&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+<div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>title</code> describes the iframe for accessibility.</p>
+
+            <h3>13.2 Embedding Maps, Videos, PDFs</h3>
+            <p>Iframes are great for maps or YouTube videos.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Map Embed&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;iframe src="https://www.google.com/maps/embed" width="600" height="450"&gt;&lt;/iframe&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: Copy embed codes from services like Google Maps.</p>
+
+            <h3>13.3 Security & Sandbox Attributes</h3>
+            <p><code>sandbox</code> locks down iframes for safety.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Sandbox IFrame&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;iframe src="page.html" sandbox="allow-scripts"&gt;&lt;/iframe&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>sandbox</code> restricts actions, like disabling popups.</p>
+        </section>
+
+        <!-- 14. Meta Tags & SEO -->
+        <section id="meta-seo">
+            <h2>14. Meta Tags & SEO</h2>
+
+            <h3>14.1 Meta Charset</h3>
+            <p><code>charset</code> ensures text displays correctly.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Charset Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Text looks perfect!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+<div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>UTF-8</code> supports all characters, like emojis. 😎</p>
+
+            <h3>14.2 Meta Description, Keywords</h3>
+            <p>Help search engines find and summarize your page.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta name="description" content="Learn HTML with fun examples"&gt;
+    &lt;meta name="keywords" content="HTML, tutorial, web"&gt;
+    &lt;title&gt;SEO Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Learn HTML&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>description</code> appears in search results, <code>keywords</code>
+                hint at
+                content.</p>
+
+            <h3>14.3 Viewport Tag</h3>
+            <p>Make your site mobile-friendly.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Responsive Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Looks great on any device!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>viewport</code> adjusts the layout for phones and tablets.</p>
+
+            <h3>14.4 Open Graph Tags</h3>
+            <p>Control how your page looks when shared on social media.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta property="og:title" content="Learn HTML"&gt;
+    &lt;meta property="og:image" content="preview.jpg"&gt;
+    &lt;title&gt;Social Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Share this page!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>og:title</code> and <code>og:image</code> make shares look awesome on
+                Facebook or Twitter.</p>
+        </section>
+
+        <!-- 15. Accessibility -->
+        <section id="accessibility">
+            <h2>15. Accessibility</h2>
+
+            <h3>15.1 ALT Text & ARIA Labels</h3>
+            <p>Make your site usable for everyone with <code>alt</code> and <code>aria-label</code>.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Accessibility Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img src="dog.jpg" alt="A happy dog"&gt;
+    &lt;button aria-label="Close menu"&gt;X&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+<div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>alt</code> describes images, <code>aria-label</code> explains buttons
+                for
+                screen readers.</p>
+
+            <h3>15.2 Tab Index & Keyboard Navigation</h3>
+            <p>Ensure users can navigate with a keyboard.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Keyboard Nav&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button tabindex="1"&gt;Click Me&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>tabindex</code> sets the focus order for keyboard users.</p>
+
+            <h3>15.3 Semantic Elements Role</h3>
+            <p>Semantic tags help assistive tech understand your site.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Semantic Roles&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;main role="main"&gt;
+        &lt;h1&gt;Main Content&lt;/h1&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>role="main"</code> marks the primary content area.</p>
+
+            <h3>15.4 Skip to Content Links</h3>
+            <p>Let keyboard users jump past navigation.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Skip Link&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;a href="#main-content" class="skip-link"&gt;Skip to content&lt;/a&gt;
+    &lt;main id="main-content"&gt;
+        &lt;h1&gt;Content&lt;/h1&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>skip-link</code> improves accessibility for keyboard navigation.</p>
+        </section>
+
+        <!-- 16. HTML Sizes, Units & Dimensions -->
+        <section id="sizes-units">
+            <h2>16. HTML Sizes, Units & Dimensions</h2>
+
+            <h3>16.1 Width, Height in px, %, em, rem</h3>
+            <p>Control element sizes with units like pixels or percentages.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Size Demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img src="photo.jpg" width="200" height="50%"&gt;
+    &lt;div style="font-size: 1.5em;"&gt;Big Text&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+<div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>px</code> is fixed, <code>%</code> is relative to the parent,
+                <code>em</code>
+                scales with font size.</p>
+
+            <h3>16.2 Responsive Sizing</h3>
+            <p>Use relative units to make your site fit any screen.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Responsive Size&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img src="image.jpg" style="width: 100%; max-width: 600px;"&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>max-width</code> keeps images from getting too big on large screens.
+            </p>
+
+            <h3>16.3 Viewport Units</h3>
+            <p><code>vw</code> and <code>vh</code> size elements based on the viewport.</p>
+            <h4>Example</h4>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Viewport Units&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div style="height: 50vh;"&gt;Half the screen height&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<button class="show-output" aria-label="Show output">Show Output</button>
+            <div class="output-container"></div>
+            <p><strong>Explanation</strong>: <code>vh</code> is 1% of the viewport’s height, great for responsive
+                designs.</p>
+        </section>
+
+        <!-- Code Playground -->
+        <section id="code-playground">
+            <h2>Code Playground</h2>
+            <p>Try HTML right here! Write code, hit “Run,” and see it live. Go wild! 🧪</p>
+            <textarea id="code-input" placeholder="Write HTML here..." rows="10"
+                aria-label="HTML code input"></textarea>
+            <button id="run-code" aria-label="Run code">Run Code</button>
+            <iframe id="code-output" title="Code output" aria-live="polite"></iframe>
+        </section>
+    </main>
+
+    <!-- Footer -->
+<footer>
+    <p>&copy; 2025 Learn HTML. All rights reserved. Developed by <a href="https://lucifer01430.github.io/Portfolio/" target="_blank" rel="noopener">Harsh</a>. Empowering the next generation of web developers.</p>
+</footer>
+<button id="scroll-to-top" aria-label="Scroll to the top of the page">
+   <strong>↑</strong>
+</button>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
