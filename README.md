@@ -3,6 +3,14 @@
 Welcome to my simplified HTML documentation repository! This repo contains my version of the official MDN HTML documentation, rewritten in a beginner-friendly way to make learning easy and accessible for everyone.
 
 ---
+## 🔗 Live Demo
+
+This project is hosted using **GitHub Pages**. You can view it live here:
+
+👉 [Live Site](https://lucifer01430.github.io/html_mdn/)
+
+> **Note:** GitHub Pages might take a few minutes to update after changes are pushed.
+
 
 ## 🚀 About This Repository
 
